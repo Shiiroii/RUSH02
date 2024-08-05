@@ -6,7 +6,7 @@
 /*   By: liulm <liulm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/03 12:19:07 by liulm             #+#    #+#             */
-/*   Updated: 2024/08/04 12:55:52 by liulm            ###   ########.fr       */
+/*   Updated: 2024/08/04 16:48:14 by liulm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,6 @@ void	units(int nb, char *str)
 	if (str[nb] == '9')
 		open_dictionary(10, 0);
 	nb++;
-	finish_line();
 }
 
 void	dozens(int nb, char *str)

@@ -6,7 +6,7 @@
 /*   By: liulm <liulm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/03 10:30:43 by liulm             #+#    #+#             */
-/*   Updated: 2024/08/04 12:55:05 by liulm            ###   ########.fr       */
+/*   Updated: 2024/08/04 16:46:27 by liulm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <fcntl.h>
+# include <stdio.h>
 
 void	ft_putchar(char c);
 void	ft_putstr(char *str);
@@ -29,5 +30,6 @@ int		ft_num_len(char *str);
 void	units(int nb, char *str);
 void	dozens(int nb, char *str);
 void	hundreds(int nb, char *str);
+int		ft_str_is_numeric(char *str);
 
 #endif

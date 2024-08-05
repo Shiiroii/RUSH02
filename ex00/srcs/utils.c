@@ -6,7 +6,7 @@
 /*   By: liulm <liulm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/03 12:06:48 by liulm             #+#    #+#             */
-/*   Updated: 2024/08/03 16:06:43 by liulm            ###   ########.fr       */
+/*   Updated: 2024/08/04 16:47:05 by liulm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,4 +67,18 @@ int	ft_atoi(char *str)
 		i++;
 	}
 	return (result * sign);
+}
+
+int	ft_str_is_numeric(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i])
+	{
+		if (!(str[i] >= '0' && str[i] <= '9'))
+			return (0);
+		i++;
+	}
+	return (1);
 }
